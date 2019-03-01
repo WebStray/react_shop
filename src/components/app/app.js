@@ -62,13 +62,8 @@ class App extends Component {
       }
     });
 
-    // localStorage.setItem("data", JSON.stringify(newData));
-
-
-
-    // localStorage.setItem('myData', {"name": "Tom", "age": 23});
-    console.log(newData);
-    // console.log(this.state.data);
+    localStorage.setItem("data", JSON.stringify(newData));
+    //console.log(newData);
   }
 
   render() {
@@ -88,15 +83,6 @@ class App extends Component {
               )} />
           </div> 
       </Router>
-
-      
-        // <div className={classes.root}>
-        //     {/* <Header /> */}
-        //     <ItemsList 
-        //       data={this.state.data}
-        //       onDeleted={this.deleteItem}
-        //       onDeletedAll={this.deleteAllItems} />         
-        // </div>
     );
   }
 }
