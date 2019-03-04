@@ -52,9 +52,9 @@ class App extends Component {
 
   addItem = (newItem) => {
      
-    const newData = [...this.state.data];
-    newItem.id = newData.length + 1;
-    newData.push(newItem);
+    newItem.id = this.state.data.length + 1;
+    const newData = [...this.state.data, newItem];
+    // newData.push(newItem);
 
     this.setState(() => {
       return {
